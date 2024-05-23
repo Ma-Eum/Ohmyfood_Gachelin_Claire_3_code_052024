@@ -36,7 +36,8 @@
     }
 
     img {
-        width: 250px;
+        width: 346px;
+        height: 231px;
     }
 
     a{
@@ -201,11 +202,21 @@
 
     .card-restaurants-img{
         position: relative;
+        overflow: hidden;
+        width: 346px; /* Ajout de la largeur pour s'assurer que le conteneur garde la taille de l'image */
+        height: 231px; /* Ajout de la hauteur pour s'assurer que le conteneur garde la taille de l'image */
+    
     }
 
     .card-restaurants-img img{
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .card-restaurants-img-btn{
@@ -241,23 +252,26 @@
     }
 
     /* Ajustement de l'icône de notation */
-.card-restaurant-rating-icone {
-    font-weight: 100; /* Rendre l'icône plus fine */
-}
+    .card-restaurant-rating-icone {
+        font-weight: 100; /* Rendre l'icône plus fine */
+    }
 
-.card-restaurant-rating-icone-hover {
-    display: none;
-}
+    .card-restaurant-rating-icone-hover {
+        display: none;
+    }
 
-.card-restaurants:hover .card-restaurant-rating-icone {
-    display: none; /* Masquer l'icône principale au survol */
-}
+    .card-restaurants:hover .card-restaurant-rating-icone {
+        display: none; /* Masquer l'icône principale au survol */
+    }
 
-.card-restaurants:hover .card-restaurant-rating-icone-hover {
-    display: inline-block; /* Afficher l'icône de survol au survol */
-}
+    .card-restaurants:hover .card-restaurant-rating-icone-hover {
+        display: inline-block; /* Afficher l'icône de survol au survol */
+    }
 
-.card-restaurant-rating-icone-hover {
-    color: var(--primary-color); /* Couleur violette au survol */
-    display: none; /* Initialement masqué */
-}
+    .card-restaurant-rating-icone-hover {
+        display: none; /* Initialement masqué */
+        /* Dégradé de couleur violet et rose */
+        background-image: linear-gradient(10deg,var(--secondary-color), var(--primary-color)); 
+        background-clip: text;
+        color: transparent;
+    }
