@@ -1,0 +1,98 @@
+/****** General ***********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+}
+
+.fa-solid {
+    color: #353535;
+}
+
+html, body {
+    font-size: 16px;
+    background-color: white;
+    color: #353535;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+img {
+    width: 250px;
+}
+
+/****** Header ***********/
+.container-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+.btn-back-container {
+    display: none;
+}
+
+.container-header-logo{
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.logo {
+    width: 168px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: #EAEAEA;
+    width: 100%;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); /* Ajout de l'ombre avec une couleur grise foncée */
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+}
+
+.icone-location-container, .adress-location {
+    display: flex;
+    align-items: center;
+}
+
+.adress-location{
+}
+
+.adress-location-txt{
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+    max-width: 125px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/****** Entete ***********/
+.entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.entete-title-container {
+    margin-left: 42px;
+    margin-right: 58px;
+}
