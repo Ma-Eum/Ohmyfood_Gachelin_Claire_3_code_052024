@@ -338,7 +338,7 @@ ul {
     padding-left: 25px;
 }
 
-.footer-info-txt-container {
+.footer-info-txt-container1 {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -365,4 +365,57 @@ ul {
 
 .footer-info-icone {
     width: 11px;
+}
+
+/* Pour les écrans de taille moyenne (tablettes) */
+@media screen and (min-width: 768px) {
+    /* Mise en ligne de la barre de fonctionnement */
+    .fonctionnement-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fonctionnement-nav-container{
+        flex-direction: row;
+    }
+
+    .fonctionnement-nav-txt {
+        width: 30%; /* Réduire la largeur des éléments de la barre de fonctionnement */
+    }
+
+    /* Affichage des cartes restaurants par 2 sur 2 lignes */
+    .restaurants-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    /* Ajustement de la largeur des cartes restaurants */
+    .card-restaurants {
+        width: calc(50% - 10px); /* Moitié de la largeur avec un espace entre les cartes */
+    }
+
+    /* Mise en ligne des éléments du footer */
+
+    .footer{
+        flex-direction: row-reverse;
+    }
+
+    .footer-info-txt-container{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .footer-info-txt-container1 {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+}
+
+/* Pour les écrans larges (desktop) */
+@media screen and (min-width: 1024px) {
+    /* Ajustements supplémentaires si nécessaire */
 }
