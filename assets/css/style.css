@@ -45,6 +45,10 @@
         color: black;
     }
 
+    ul {
+        list-style-type: none;
+      }
+
 /****** Header ***********/
     .container-header {
         display: flex;
@@ -65,6 +69,7 @@
 
     .logo {
         width: 168px;
+        height: auto;
     }
 
     .location-container {
@@ -124,6 +129,11 @@
         font-weight: 500; 
     }
 
+    .entete-btn:hover{
+        background-color: white;
+        opacity:0.8;
+    }
+
 /****** Fonctionnement ***********/
 
     .fonctionnement{
@@ -160,7 +170,7 @@
 
     .fonctionnement-nav-link{
         display: flex;
-        align-items: center;
+        align-items: stretch;
         gap: 27px;
         padding-left: 34px;
     }
@@ -275,3 +285,50 @@
         background-clip: text;
         color: transparent;
     }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .container-footer{
+        background-color: #353535;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-left: 25px;
+    }
+
+    .footer-info-txt-container{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .footer-info-txt-content-container{
+        display: flex;
+        gap: 11px;
+    }
+
+    .footer-logo-container img {
+        filter: brightness(0) invert(1);
+        width: 50%;
+        height: auto;
+    
+    }
+
+    .footer-info-txt-content-txt,  .footer-info-icone{
+        color: white;
+    }
+    
+
+
+    /* Ajustez la taille de l'icône fa-handshake-angle pour correspondre à la largeur de fa-utensils */
+    .footer-info-icone.fa-handshake-angle {
+        transform: scaleX(0.78); /* Ajustez la valeur selon vos besoins */
+    }
+
+    .footer-info-icone{
+        width: 11px;
+    }
+    
