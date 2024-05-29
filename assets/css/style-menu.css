@@ -1,0 +1,169 @@
+
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+}
+
+h1{
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;    
+}
+
+.container-menu-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 17px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
+
+.container-menu-header-logo{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.icone-menu{
+    font-size: 30px;
+    color: #353535;
+}
+
+.menu-entete{
+    width: auto;
+    position: relative; /* Ajoutez cette ligne */
+}
+
+/***  entete  ***/
+    .menu-entete-title-container{
+        display: flex;
+        flex-direction: row;
+        border-radius: 30%;
+    }
+
+
+/***  menu-title  ***/
+
+    .menu-title{  
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding-left: 17px;
+    }
+
+    .card-menu-rating{
+        font-size: 25px;
+        margin:0;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: -55px; /* Ajoutez cette ligne */
+        position: relative; /* Ajoutez cette ligne */
+        z-index: 1; /* Ajoutez cette ligne */
+        padding-top: 32px;
+        padding-bottom: 40px;
+        background-color: #F6F6F6;
+        border-top-left-radius:60px;
+        border-top-right-radius:60px;
+    }
+
+/***  menu-detail  ***/
+    h2{
+        font-weight: lighter;
+        font-size: 16px;
+    }
+
+    .menu-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding-left: 13px;
+    }
+
+    .menu-detail-title{
+        text-transform: uppercase;
+        border-bottom: 3px solid var(--tertiary-color);
+        width: 40px;
+    }
+
+    .menu-card{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 13px 15px;
+    }
+
+    .menu-card-container{
+        width: 287px;
+    }
+
+    .menu-card-name{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    .menu-card-price{
+        font-weight: bold;
+    }
+
+    .menu-btn{
+        margin: 0;
+    }
+    /* Tablette */
+@media (min-width: 768px) {
+    .container-menu-header-logo {
+        align-items: center;
+        gap: 265px;
+    }
+
+    .content {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .menu-detail {
+        padding-left: 20px;
+        width: 80%;
+    }
+
+    .menu-card-container {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container-menu-header-logo {
+        gap: 572px;
+    }
+    .menu-entete-img{
+        height: 383px;
+        object-fit: cover;
+    }
+
+    .content {
+        padding-top: 50px;
+        padding-bottom: 60px;
+        width: 70%;
+    }
+
+    .menu-detail {
+        padding-left: 30px;
+    }
+
+    .menu-card-container {
+        width: 70%;
+    }
+}
