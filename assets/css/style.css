@@ -232,7 +232,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 346px;
+        max-width: 80%;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         border-radius: 10px;
         overflow: hidden;
@@ -382,7 +382,7 @@
         width: 11px;
     }
 
-    /* Pour les écrans de taille moyenne (tablettes) */
+/* Pour les écrans de taille moyenne (tablettes) */
     @media screen and (min-width: 768px) {
 
         .container-header{
@@ -436,11 +436,15 @@
         gap: 97px;
     }
     
+    .container-footer{
+        padding-right: 10px;
+    }
     /* Footer en une ligne avec logo à droite */
     .footer {
         flex-direction: row;
         justify-content: end;
         align-items: center;
+        gap: 0;
     }
 
     .footer-logo-container {
@@ -450,7 +454,6 @@
     .footer-info-container{
         display: flex;
         flex-direction: row;
-        gap: 7px;
     }
 
     .footer-logo-container img{
@@ -476,13 +479,17 @@
     }
 
     .footer-info-txt-content2{
-        min-width: 130px; /* Assurez une largeur minimale pour chaque élément */
+        min-width: 122px; /* Assurez une largeur minimale pour chaque élément */
     }
     }
 
 /* Pour les écrans de grande taille (ordinateurs de bureau) */
     @media screen and (min-width: 1024px) {
         /* Mise à jour des conteneurs */
+
+        *{
+            max-width: 1440px;
+        }
         .container-header {
             justify-content: space-between;
             align-items: center;
@@ -492,6 +499,10 @@
         .entete {
             padding-top: 30px;
             padding-bottom: 30px;
+        }    
+        
+        .location-container {
+            box-shadow: none;
         }
 
         /* Affichage des cartes restaurants par 2 */
