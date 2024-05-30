@@ -95,27 +95,57 @@ h1{
         width: 40px;
     }
 
-    .menu-card{
+    .menu-card {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-end; /* Align items to the center */
         justify-content: space-between;
         gap: 5px;
         background-color: white;
         border-radius: 20px;
         padding: 13px 15px;
+        position: relative;  /* Add relative positioning */
+        overflow: hidden;    /* Hide any overflow content */
     }
 
     .menu-card-container{
         width: 287px;
+        font-weight: bold;
     }
-
+    
+    
     .menu-card-name{
         font-size: 15px;
         font-weight: lighter;
     }
 
-    .menu-card-price{
-        font-weight: bold;
+    .menu-card:hover .menu-card-container {
+        width: calc(100% - 15%); /* Reduce the width to make room for the extra div */
+    }
+
+    .menu-card:hover .menu-card-price-container {
+        width: calc(100% - 35%); /* Reduce the width to make room for the extra div */
+    }
+
+    .menu-card:hover .menu-card-extra {
+        display: block;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-card-extra{
+        display: none;
+        background-color: var(--tertiary-color);
+        position: absolute;  /* Position absolutely to cover the entire card */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 20%;  
+    }
+    .menu-card-extra i{
+        color: white;
+        z-index: 1;  /* Ensure the icon is above the background */
+    
     }
 
     .menu-btn{
