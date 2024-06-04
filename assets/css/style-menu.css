@@ -207,3 +207,121 @@ h1{
             width: 70%;
         }
     }
+
+    /** Animations **/
+    /* Animation pour effet de machine à écrire */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+/* Animation pour effet de fondu */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(1.2); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Appliquer l'animation de machine à écrire */
+h1.menut-entete-title {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    overflow: hidden; /* Ensure the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Animation de l'image d'en-tête */
+.menu-entete-img {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation de fondu pour les sections */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSection 1s forwards ease-out;
+}
+
+@keyframes fadeInSection {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ajouter des délais pour les différentes sections */
+.menu-entete-title-container {
+    animation-delay: 1s;
+}
+
+.menu-title {
+    animation-delay: 1.5s;
+}
+
+
+/* Animation pour chaque menu-detail */
+@keyframes fadeInDetail {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Appliquer l'animation de fondu à chaque menu-detail avec un délai approprié */
+.menu-detail {
+    animation: fadeInDetail s ease forwards;
+    animation-delay: 3.5s;
+}
+
+.menu-detail.entree {
+    animation-delay: 2.5s; /* Délai de 1 seconde après l'apparition de menu-title */
+}
+
+.menu-detail.plats {
+    animation-delay: 3s; /* Délai de 2 secondes après l'apparition de menu-title */
+}
+
+.menu-detail.desserts {
+    animation-delay: 3s; /* Délai de 3 secondes après l'apparition de menu-title */
+}
+
+
+.entete-btn-container.menu-btn {
+    animation-delay: 4s;
+}
+
+/* Animation de rotation et de mise à l'échelle pour le bouton Commander */
+@keyframes rotateAndScaleIn {
+    0% {
+        transform: scale(0) rotate(-180deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2) rotate(0deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+/* Appliquer l'animation au bouton Commander */
+.entete-btn-container.menu-btn {
+    animation: rotateAndScaleIn 1s ease-in-out forwards;
+    animation-delay: 4s; /* Délai de 4 secondes */
+}
