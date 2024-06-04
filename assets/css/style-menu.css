@@ -1,18 +1,17 @@
-
 :root {
     --primary-color: #9356DC;
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0;
 }
 
-h1{
+h1 {
     font-family: "Shrikhand", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 28px;    
+    font-size: 28px;
 }
 
-.container-menu-header{
+.container-menu-header {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -21,245 +20,262 @@ h1{
     padding-bottom: 13px;
 }
 
-.container-menu-header-logo{
+.container-menu-header-logo {
     display: flex;
     align-items: center;
     gap: 42px;
 }
 
-.icone-menu{
+.icone-menu {
     font-size: 30px;
     color: #353535;
 }
 
-.menu-entete{
+.menu-entete {
     width: auto;
     position: relative;
 }
 
 /***  entete  ***/
 
-    .menu-entete-title-container{
-        display: flex;
-        flex-direction: row;
-        border-radius: 30%;
-    }
-
+.menu-entete-title-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 30%;
+}
 
 /***  menu-title  ***/
 
-    .menu-title{  
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        padding-left: 17px;
-    }
+.menu-title {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 17px;
+}
 
-    .card-menu-rating{
-        font-size: 25px;
-        margin:0;
-    }
+.card-menu-rating {
+    font-size: 25px;
+    margin: 0;
+}
 
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        margin-top: -55px;
-        position: relative;
-        z-index: 1;
-        padding-top: 32px;
-        padding-bottom: 40px;
-        background-color: #F6F6F6;
-        border-top-left-radius:60px;
-        border-top-right-radius:60px;
-    }
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: -55px;
+    position: relative;
+    z-index: 1;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    background-color: #F6F6F6;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
 
 /***  menu-detail  ***/
 
-    h2{
-        font-weight: lighter;
-        font-size: 16px;
+h2 {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.menu-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 13px;
+}
+
+.menu-detail-title {
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--tertiary-color);
+    width: 40px;
+}
+
+.menu-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 5px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 13px 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-card-container {
+    width: 287px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-card-title,
+.menu-card-name,
+.menu-card-price-container {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-card-name {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.menu-card:hover .menu-card-container {
+    width: calc(100% - 5%);
+}
+
+.menu-card:hover .menu-card-price-container {
+    width: 40%;
+}
+
+.menu-card:hover .menu-card-extra {
+    display: block;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-card-extra {
+    display: none;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    animation: slideIn 0.5s forwards;
+    z-index: 1;
+}
+
+.menu-card-extra i {
+    color: white;
+    font-size: 2em;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.menu-btn {
+    margin: 0;
+}
+
+/* Tablette */
+@media (min-width: 768px) {
+    .container-menu-header-logo {
+        align-items: start;
     }
 
-    .menu-detail{
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        padding-left: 13px;
-    }
-
-    .menu-detail-title{
-        text-transform: uppercase;
-        border-bottom: 3px solid var(--tertiary-color);
-        width: 40px;
-    }
-
-    .menu-card {
-        display: flex;
-        align-items: flex-end; /* Align items to the center */
-        justify-content: space-between;
-        gap: 5px;
-        background-color: white;
-        border-radius: 20px;
-        padding: 13px 15px;
-        position: relative;  /* Add relative positioning */
-        overflow: hidden;    /* Hide any overflow content */
-    }
-
-    .menu-card-container{
-        width: 287px;
-        font-weight: bold;
-    }
-    
-    
-    .menu-card-name{
-        font-size: 15px;
-        font-weight: lighter;
-    }
-
-    .menu-card:hover .menu-card-container {
-        width: calc(100% - 5%); /* Reduce the width to make room for the extra div */
-    }
-
-    .menu-card:hover .menu-card-price-container {
-        width: 40%; /* Reduce the width to make room for the extra div */
-    }
-
-    .menu-card:hover .menu-card-extra {
-        display: block;
-        width: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .menu-card-extra {
-        display: none;
-        background-color: var(--tertiary-color);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 20%;
-        animation: slideIn 0.5s forwards; /* Ajoutez une animation de transition */
-        z-index: 1; /* Ajoutez cette ligne pour contrôler l'empilement */
-    }
-    
-    .menu-card-extra i {
-        color: white;
-        font-size: 2em; /* Réduire la taille de l'icône */
-    }
-    
-    /* Animation de glissement de droite à gauche */
-    @keyframes slideIn {
-        from {
-            transform: translateX(100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-    
-
-    .menu-btn{
-        margin: 0;
-    }
-
-    /* Tablette */
-    @media (min-width: 768px) {
-        .container-menu-header-logo {
-            align-items: start;
-        }
-
-        .logo-container{    
+    .logo-container {
         margin-left: auto;
         margin-right: auto;
-        }
-
-        .menu-entete-img{
-            height: 450px;
-            object-fit: cover;
-        }
-
-        .content {
-            padding-top: 40px;
-            padding-bottom: 50px;
-            width: 80%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .menu-detail {
-            padding-left: 20px;
-            width: 80%;
-        }
-
-        .menu-card-container {
-            width: 80%;
-        }
     }
 
-    /* Desktop */
-    @media (min-width: 1024px) {
-        .menu-entete-img{
-            height: 383px;
-            object-fit: cover;
-        }
-
-        .content {
-            padding-top: 50px;
-            padding-bottom: 60px;
-            width: 70%;
-        }
-
-        .menu-detail {
-            padding-left: 30px;
-        }
-
-        .menu-card-container {
-            width: 70%;
-        }
+    .menu-entete-img {
+        height: 450px;
+        object-fit: cover;
     }
 
-    /** Animations **/
-    /* Animation pour effet de machine à écrire */
+    .content {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .menu-detail {
+        padding-left: 20px;
+        width: 80%;
+    }
+
+    .menu-card-container {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .menu-entete-img {
+        height: 383px;
+        object-fit: cover;
+    }
+
+    .content {
+        padding-top: 50px;
+        padding-bottom: 60px;
+        width: 70%;
+    }
+
+    .menu-detail {
+        padding-left: 30px;
+    }
+
+    .menu-card-container {
+        width: 70%;
+    }
+}
+
+/** Animations **/
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }
 
-/* Animation pour effet de fondu */
 @keyframes fadeIn {
-    from { opacity: 0; transform: scale(1.2); }
-    to { opacity: 1; transform: scale(1); }
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-/* Appliquer l'animation de machine à écrire */
 h1.menut-entete-title {
     font-family: "Shrikhand", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 28px;
-    overflow: hidden; /* Ensure the content is not revealed until the animation */
-    border-right: .15em solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-/* Animation de l'image d'en-tête */
 .menu-entete-img {
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Animation de fondu pour les sections */
 .fade-in-section {
     opacity: 0;
     transform: translateY(20px);
@@ -273,7 +289,6 @@ h1.menut-entete-title {
     }
 }
 
-/* Ajouter des délais pour les différentes sections */
 .menu-entete-title-container {
     animation-delay: 1s;
 }
@@ -282,8 +297,6 @@ h1.menut-entete-title {
     animation-delay: 1.5s;
 }
 
-
-/* Animation pour chaque menu-detail */
 @keyframes fadeInDetail {
     from {
         opacity: 0;
@@ -295,30 +308,27 @@ h1.menut-entete-title {
     }
 }
 
-/* Appliquer l'animation de fondu à chaque menu-detail avec un délai approprié */
 .menu-detail {
     animation: fadeInDetail s ease forwards;
     animation-delay: 3.5s;
 }
 
 .menu-detail.entree {
-    animation-delay: 2.5s; /* Délai de 1 seconde après l'apparition de menu-title */
+    animation-delay: 2.5s;
 }
 
 .menu-detail.plats {
-    animation-delay: 3s; /* Délai de 2 secondes après l'apparition de menu-title */
+    animation-delay: 3s;
 }
 
 .menu-detail.desserts {
-    animation-delay: 3s; /* Délai de 3 secondes après l'apparition de menu-title */
+    animation-delay: 3s;
 }
-
 
 .entete-btn-container.menu-btn {
     animation-delay: 4s;
 }
 
-/* Animation de rotation et de mise à l'échelle pour le bouton Commander */
 @keyframes rotateAndScaleIn {
     0% {
         transform: scale(0) rotate(-180deg);
@@ -334,8 +344,7 @@ h1.menut-entete-title {
     }
 }
 
-/* Appliquer l'animation au bouton Commander */
 .entete-btn-container.menu-btn {
     animation: rotateAndScaleIn 1s ease-in-out forwards;
-    animation-delay: 4s; /* Délai de 4 secondes */
+    animation-delay: 4s;
 }
