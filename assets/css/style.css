@@ -353,7 +353,13 @@ body{
     padding-left: 25px;
 }
 
-.footer-info-txt-container1 {
+.footer-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer-info-txt-container1, .footer-info-txt-container2 {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -401,11 +407,11 @@ body{
 }
 
 .loader {
-    border: 8px solid var(--tertiary-color);
+    border: 20px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 8px solid var(--primary-color);
-    width: 60px;
-    height: 60px;
+    border-top: 20px solid var(--primary-color);
+    width: 160px;
+    height: 160px;
     animation: spin 2s linear infinite;
 }
 
