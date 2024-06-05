@@ -403,8 +403,8 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Superpose l'élément au-dessus des autres */
-    animation: fadeOut 6s forwards; /* Animation pour faire disparaître */
-    animation-delay: 5s; /* Délai avant de commencer à disparaître */
+    animation: fadeOut 4s forwards; /* Animation pour faire disparaître */
+    animation-delay: 3s; /* Délai avant de commencer à disparaître */
 }
 
 /* Style pour l'icône de chargement */
@@ -427,7 +427,7 @@ body{
     overflow: hidden; /* Pour masquer le débordement */
     position: relative;
     opacity: 0; /* Initialement invisible */
-    animation: showBar 3s forwards; /* Animation pour faire apparaître */
+    animation: showBar 2s forwards; /* Animation pour faire apparaître */
     animation-delay: 2s; /* Délai avant de commencer l'animation */
 }
 
@@ -573,7 +573,7 @@ padding-bottom: 50px;
     *{
         max-width: 1440px;
     }
-    
+
     .container-header {
         justify-content: space-between;
         align-items: center;
