@@ -53,7 +53,7 @@ h1.menut-entete-title {
     font-family: "Shrikhand", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 6.5vw;
+    font-size: 26px;
     overflow: hidden;
     border-right: 0.15em solid black;
     white-space: nowrap;
@@ -71,13 +71,17 @@ h1.menut-entete-title {
 .menu-title {
     display: flex;
     align-items: center;
-    gap: 5px !important;
+    gap: 5px;
     animation-delay: 1.5s;
 }
 
 .card-menu-rating {
     font-size: 25px;
     margin: 0;
+}
+
+.card-restaurant-rating {
+    align-self: center;
 }
 
 .content {
@@ -101,19 +105,20 @@ h1.menut-entete-title {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    padding-left: 13px;
-    animation: fadeInDetail s ease forwards;
+    animation: fadeInDetail 1s ease forwards;
     animation-delay: 3.5s;
-}
-
-.menu-detail .fade-in-section{
     margin: 0 auto;
+    width: 100%;
 }
 
 .menu-detail-title {
     text-transform: uppercase;
     border-bottom: 3px solid var(--tertiary-color);
     width: 40px;
+}
+
+.menu-detail-title-container {
+    margin-left: 15px; /* Utilisez la même valeur de marge que .menu-card-container */
 }
 
 .menu-detail:nth-child(2){
@@ -136,13 +141,15 @@ h1.menut-entete-title {
     background-color: white;
     border-radius: 20px;
     padding: 13px 0px;
-    margin: 0px 15px;
     position: relative;
     overflow: hidden;
+    width: 95%;
+    margin: auto;
 }
 
 .menu-card-container {
-    width: 287px;
+    padding-left: 15px; /* Ajustez cette valeur si nécessaire */
+    width: 80%;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
@@ -292,7 +299,7 @@ h1.menut-entete-title {
 
 /* Tablette */
 @media (min-width: 768px) {
-    h1 {
+    h1.menut-entete-title{
         font-size: 28px;
     }
 
@@ -333,6 +340,9 @@ h1.menut-entete-title {
 
 /* Desktop */
 @media (min-width: 1024px) {
+    html{
+        margin: 0 auto;
+    }
     .menu-entete-img {
         height: 383px;
         object-fit: cover;
@@ -352,4 +362,3 @@ h1.menut-entete-title {
         width: 70%;
     }
 }
-

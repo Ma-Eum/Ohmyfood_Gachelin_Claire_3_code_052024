@@ -573,6 +573,7 @@ padding-bottom: 50px;
     *{
         max-width: 1440px;
     }
+    
     .container-header {
         justify-content: space-between;
         align-items: center;
