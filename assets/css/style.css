@@ -216,10 +216,13 @@ body{
     justify-content: space-between;
     flex-direction: column;
     align-items: stretch;
-    padding-left: 20px;
     padding-top: 54px;
     padding-bottom: 66px;
     background-color: #F6F6F6;
+}
+
+.restaurants-title{
+    padding-left: 20px;
 }
 
 .restaurants-cards {
@@ -605,5 +608,15 @@ padding-bottom: 50px;
         object-fit: cover;
         object-position: -2px -157px; /* Réglage de la position de l'image */
         display: block;
+    }
+
+    .container-footer{
+        padding-right: 25px;
+    }
+
+    .restaurants-cards{
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
