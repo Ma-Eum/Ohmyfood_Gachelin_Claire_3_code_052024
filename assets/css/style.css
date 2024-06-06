@@ -188,9 +188,9 @@ body{
     position: absolute;
     left: -15px;
     background-color: var(--primary-color);
-    border-radius: 20px;
-    padding-left: 8px;
-    width: 22px;
+    border-radius: 25px;
+    padding-left: 5px;
+    width: 18px;
     font-size: 14px;
     font-weight: 500;
     color: white;
