@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,7 +13,7 @@
 <body>
     <header class="container-header">
         <div class="container-header-logo">
-            <img src="./assets/images/logo/ohmyfood-2x.svg"  alt="Logo" class="logo">
+            <img src="./assets/images/logo/ohmyfood-2x.svg" alt="Logo" class="logo">
         </div>
         <div class="location-container">
             <div class="icone-location-container">
@@ -40,7 +39,7 @@
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             </div>
             <div class="entete-btn-container">
-                <button type="submit" class="entete-btn">Explorer nos restaurants</button>
+                <a href="#restaurants" class="entete-btn">Explorer nos restaurants</a>
             </div>
         </section>
         <section class="fonctionnement">
@@ -55,10 +54,11 @@
                                 <p class="fonctionnement-pastille">1</p>
                                 <i class="fa-solid fa-mobile-screen-button fonctionnement-icone"></i>
                                 <p class="fonctionnement-txt">Choisissez un restaurant</p>
-                            </div></a>
+                            </div>
+                        </a>
                     </li>
                     <li class="fonctionnement-nav-txt">
-                        <a href="" >
+                        <a href="">
                             <div class="fonctionnement-nav-link">
                                 <p class="fonctionnement-pastille">2</p>
                                 <i class="fa-solid fa-list fonctionnement-icone"></i>
@@ -71,96 +71,91 @@
                             <div class="fonctionnement-nav-link">
                                 <p class="fonctionnement-pastille">3</p>
                                 <i class="fa-solid fa-store fonctionnement-icone"></i>
-                                <p class="fonctionnement-txt">Dégustez au restaurant</p>   
-                            </div> 
+                                <p class="fonctionnement-txt">Dégustez au restaurant</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </nav>
         </section>
-        <section class="restaurants">
+        <section class="restaurants" id="restaurants">
             <div class="restaurants-title">
                 <h2>Restaurants</h2>
             </div>
             <div class="restaurants-cards">
                 <div class="card-restaurants">
-                    <a href="/lapalettedugout.html">
-                        <div class="card-restaurants-img">
-                            <img src="assets/images/restaurants/jay-wennington.jpg" alt=""
-                            ><button
-                             type="submit" class="card-restaurants-img-btn">Nouveau</button>
+                    <div class="card-restaurants-img">
+                        <a href="/lapalettedugout.html">
+                            <img src="assets/images/restaurants/jay-wennington.jpg" alt="">
+                        </a>
+                        <div class="card-restaurants-img-btn">Nouveau</div>
+                    </div>
+                    <div class="card-restaurant-info">
+                        <div class="card-restaurant-info-txt-container">
+                            <h3>La palette du goût</h3>
+                            <p class="card-restaurant-info-txt">Ménilmontant</p>
                         </div>
-                        <div class="card-restaurant-info">
-                            <div class="card-restaurant-info-txt-container">
-                                <h3>La palette du goût</h3>
-                                <p class="card-restaurant-info-txt">Ménilmontant</p>
-                            </div>
-                            <div class="card-restaurant-rating">
-                                <input type="checkbox" id="rating1" class="rating-checkbox">
-                                <label for="rating1" class="fa-regular fa-heart card-restaurant-rating-icone"></label>
-                                <label for="rating1" class="fa-solid fa-heart card-restaurant-rating-icone-hover"></label>
-                            </div>
-                            
+                        <div class="card-restaurant-rating">
+                            <input type="checkbox" id="rating1" class="rating-checkbox">
+                            <label for="rating1" class="fa-regular fa-heart card-restaurant-rating-icone"></label>
+                            <label for="rating1" class="fa-solid fa-heart card-restaurant-rating-icone-hover"></label>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="card-restaurants note-enchantee">
-                    <a href="lanoteenchantee.html">
-                        <div class="card-restaurants-img">
-                            <img src="assets/images/restaurants/stil.jpg" class="" alt=""
-                            ><button
-                             type="submit" class="card-restaurants-img-btn">Nouveau</button>
+                    <div class="card-restaurants-img">
+                        <a href="lanoteenchantee.html">
+                            <img src="assets/images/restaurants/stil.jpg" alt="">
+                        </a>
+                        <div class="card-restaurants-img-btn">Nouveau</div>
+                    </div>
+                    <div class="card-restaurant-info">
+                        <div class="card-restaurant-info-txt-container">
+                            <h3>La note enchantée</h3>
+                            <p class="card-restaurant-info-txt">Charonne</p>
                         </div>
-                        <div class="card-restaurant-info">
-                            <div class="card-restaurant-info-txt-container">
-                                <h3>La note enchantée</h3>
-                                <p class="card-restaurant-info-txt">Charonne</p>
-                            </div>
-                            <div class="card-restaurant-rating">
-                                <input type="checkbox" id="rating2" class="rating-checkbox">
-                                <label for="rating2" class="fa-regular fa-heart card-restaurant-rating-icone"></label>
-                                <label for="rating2" class="fa-solid fa-heart card-restaurant-rating-icone-hover"></label>
-                            </div>
+                        <div class="card-restaurant-rating">
+                            <input type="checkbox" id="rating2" class="rating-checkbox">
+                            <label for="rating2" class="fa-regular fa-heart card-restaurant-rating-icone"></label>
+                            <label for="rating2" class="fa-solid fa-heart card-restaurant-rating-icone-hover"></label>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="card-restaurants">
-                    <a href="alafrancaise.html">
-                        <div class="card-restaurants-img">
-                            <img src="assets/images/restaurants/toa-heftiba.jpg" alt=""
-                            >
+                    <div class="card-restaurants-img">
+                        <a href="alafrancaise.html">
+                            <img src="assets/images/restaurants/toa-heftiba.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card-restaurant-info">
+                        <div class="card-restaurant-info-txt-container">
+                            <h3>A la française</h3>
+                            <p class="card-restaurant-info-txt">Cité Rouge</p>
                         </div>
-                        <div class="card-restaurant-info">
-                            <div class="card-restaurant-info-txt-container">
-                                <h3>A la française</h3>
-                                <p class="card-restaurant-info-txt">Cité Rouge</p>
-                            </div>
-                            <div class="card-restaurant-rating">
-                                <input type="checkbox" id="rating3" class="rating-checkbox">
-                                <label for="rating3" class="fa-regular fa-heart card-restaurant-rating-icone"></label>
-                                <label for="rating3" class="fa-solid fa-heart card-restaurant-rating-icone-hover"></label>
-                            </div>
+                        <div class="card-restaurant-rating">
+                            <input type="checkbox" id="rating3" class="rating-checkbox">
+                            <label for="rating3" class="fa-regular fa-heart card-restaurant-rating-icone"></label>
+                            <label for="rating3" class="fa-solid fa-heart card-restaurant-rating-icone-hover"></label>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="card-restaurants">
-                    <a href="ledelicedessens.html">
-                        <div class="card-restaurants-img">
-                            <img src="assets/images/restaurants/louis-hansel-shotsoflouis.jpg" alt=""
-                            >
+                    <div class="card-restaurants-img">
+                        <a href="ledelicedessens.html">
+                            <img src="assets/images/restaurants/louis-hansel-shotsoflouis.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card-restaurant-info">
+                        <div class="card-restaurant-info-txt-container">
+                            <h3>La délice des sens</h3>
+                            <p class="card-restaurant-info-txt">Folie-Méricourt</p>
                         </div>
-                        <div class="card-restaurant-info">
-                            <div class="card-restaurant-info-txt-container">
-                                <h3>La délice des sens</h3>
-                                <p class="card-restaurant-info-txt">Folie-Méricourt</p>
-                            </div>
-                            <div class="card-restaurant-rating">
-                                <input type="checkbox" id="rating4" class="rating-checkbox">
-                                <label for="rating4" class="fa-regular fa-heart card-restaurant-rating-icone"></label>
-                                <label for="rating4" class="fa-solid fa-heart card-restaurant-rating-icone-hover"></label>
-                            </div>
+                        <div class="card-restaurant-rating">
+                            <input type="checkbox" id="rating4" class="rating-checkbox">
+                            <label for="rating4" class="fa-regular fa-heart card-restaurant-rating-icone"></label>
+                            <label for="rating4" class="fa-solid fa-heart card-restaurant-rating-icone-hover"></label>
                         </div>
-                   </a> 
+                    </div>
                 </div>
             </div>
         </section>
@@ -196,8 +191,8 @@
                             </div>
                         </a>
                     </li>
-                    </ul>
-                    <ul class="footer-info-txt-container2">
+                </ul>
+                <ul class="footer-info-txt-container2">
                     <li class="footer-info-txt-content2">
                         <a href="">
                             <p class="footer-info-txt-content-txt">Mentions légales</p>
