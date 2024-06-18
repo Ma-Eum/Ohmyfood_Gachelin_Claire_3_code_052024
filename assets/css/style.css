@@ -23,10 +23,6 @@ html, body {
     font-weight: 400;
 }
 
-html{
-    margin: auto;
-}
-
 h1, h2 {
     font-weight: bold;
     font-size: 24px;
@@ -54,7 +50,7 @@ ul {
     list-style-type: none;
 }
 
-body{
+body {
     margin: 0 auto;
     max-width: 1440px;
 }
@@ -64,7 +60,6 @@ body{
 }
 
 /* Header */
-
 .container-header {
     display: flex;
     flex-direction: column;
@@ -85,17 +80,13 @@ body{
 .location-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
     background-color: #EAEAEA;
     width: 100%;
     box-shadow: 9px 2px 9px 3px rgba(0, 0, 0, 0.5);
     padding-top: 14.5px;
     padding-bottom: 14.5px;
-}
-
-.icone-location-container, .adress-location {
-    display: flex;
-    align-items: center;
 }
 
 .adress-location {
@@ -109,7 +100,6 @@ body{
 }
 
 /* Entête */
-
 .entete {
     display: flex;
     flex-direction: column;
@@ -145,12 +135,9 @@ body{
 }
 
 /* Fonctionnement */
-
 .fonctionnement {
     padding-top: 48px;
     padding-bottom: 68px;
-    padding-left: 20px;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -208,8 +195,13 @@ body{
     color: var(--primary-color);
 }
 
-/* Restaurants */
 
+.restaurants-title,.fonctionnement {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Restaurants */
 .restaurants {
     display: flex;
     flex-wrap: wrap;
@@ -219,10 +211,6 @@ body{
     padding-top: 54px;
     padding-bottom: 66px;
     background-color: #F6F6F6;
-}
-
-.restaurants-title{
-    padding-left: 20px;
 }
 
 .restaurants-cards {
@@ -238,8 +226,7 @@ body{
 .card-restaurants {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 80%;
+    width: 90%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -248,7 +235,7 @@ body{
 .card-restaurants-img {
     position: relative;
     width: 100%;
-    height: 172px; /* Hauteur fixe pour les appareils mobiles */
+    height: 172px;
     overflow: hidden;
 }
 
@@ -256,12 +243,12 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: bottom; /* Afficher le bas de l'image */
+    object-position: bottom;
     display: block;
 }
 
 .note-enchantee .card-restaurants-img img {
-    object-position: center ; /* Modifier la position de l'image uniquement pour cette carte */
+    object-position: center;
 }
 
 .card-restaurants-img-btn {
@@ -295,13 +282,11 @@ body{
     font-size: 17px;
 }
 
-/* rating card */ 
 .card-restaurant-rating {
     align-self: flex-start;
     margin-top: 10px;   
     font-size: 18px;
 }
-
 
 .card-restaurant-rating-icone {
     font-weight: 100;
@@ -346,7 +331,6 @@ body{
 }
 
 /* Footer */
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -360,7 +344,7 @@ body{
     padding-left: 25px;
 }
 
-.footer-info-container{
+.footer-info-container {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -418,7 +402,7 @@ body{
 .loader {
     border: 20px solid #f3f3f3; /* Bordure grise */
     border-radius: 50%; /* Cercle */
-    border-top: 20px solid var(--primary-color); /* Bordure du dessus bleue */
+    border-top: 20px solid var(--primary-color); /* Bordure du dessus violette */
     width: 160px; /* Largeur de l'icône */
     height: 160px; /* Hauteur de l'icône */
     animation: spin 2s linear infinite; /* Animation pour faire tourner */
@@ -494,14 +478,8 @@ body{
 
 /* Mise en ligne de la barre de fonctionnement */
 .fonctionnement{
-    
-padding-top: 50px;
-padding-bottom: 50px;
-}
-
-.fonctionnement-nav {
-    display: flex;
-    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .fonctionnement-nav-container{
@@ -510,6 +488,10 @@ padding-bottom: 50px;
 
 .fonctionnement-nav-txt {
     width: 30%; /* Réduire la largeur des éléments de la barre de fonctionnement */
+}
+
+.fonctionnement-nav-link {
+    align-items: center;
 }
 
 .restaurants{
@@ -524,6 +506,10 @@ padding-bottom: 50px;
     flex-direction: row;
     justify-content: center;
     gap: 97px;
+}
+
+.restaurants-title, .card-restaurants,.fonctionnement{
+    width: 80%;
 }
 
 .container-footer{
@@ -595,11 +581,24 @@ padding-bottom: 50px;
     .location-container {
         box-shadow: none;
     }
+    .fonctionnement,.restaurants-title{
+        padding-left: 20px;
+    }
+
+    .fonctionnement, .restaurants-title{
+        width: 100%;
+    }
 
     /* Affichage des cartes restaurants par 2 */
     .card-restaurants {
         width: 45%; /* Afficher deux cartes par ligne */
         max-width: 645px;
+    }
+
+    .restaurants-cards{
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
     .card-restaurants-img img{
@@ -612,11 +611,5 @@ padding-bottom: 50px;
 
     .container-footer{
         padding-right: 25px;
-    }
-
-    .restaurants-cards{
-        justify-content: space-around;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 }
