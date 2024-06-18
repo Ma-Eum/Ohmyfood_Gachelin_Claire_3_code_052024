@@ -1,0 +1,9 @@
+# Ohmyfood
+
+Ohmyfood est un site web pour découvrir et commander des plats de restaurants. Ce projet met en avant l'utilisation d'animations CSS, de techniques de design responsive et de bonnes pratiques de développement web.
+
+## Auteur
+
+Claire GACHELIN
+- GitHub-repository: (https://github.com/Ma-Eum/Ohmyfood_Gachelin_Claire_3_code_052024.git)
+- Page OhMyFood: (https://ma-eum.github.io/Ohmyfood_Gachelin_Claire_3_code_052024/)
