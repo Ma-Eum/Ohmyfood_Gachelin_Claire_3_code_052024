@@ -84,7 +84,7 @@ body {
     gap: 16px;
     background-color: #EAEAEA;
     width: 100%;
-    box-shadow: 9px 2px 9px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 18px -3px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.2)inset; /*corriger le shadow au dessus ui va vers l'intérieur*/ 
     padding-top: 14.5px;
     padding-bottom: 14.5px;
 }
