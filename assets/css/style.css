@@ -319,11 +319,11 @@ body {
     display: none;
 }
 
-.card-restaurants:hover .rating-checkbox + .card-restaurant-rating-icone {
+.card-restaurant-rating:hover .rating-checkbox + .card-restaurant-rating-icone {
     display: none;
 }
 
-.card-restaurants:hover .rating-checkbox + .card-restaurant-rating-icone + .card-restaurant-rating-icone-hover {
+.card-restaurant-rating:hover .rating-checkbox + .card-restaurant-rating-icone + .card-restaurant-rating-icone-hover {
     display: inline-block;
     background-image: linear-gradient(10deg, var(--secondary-color), var(--primary-color));
     background-clip: text;
