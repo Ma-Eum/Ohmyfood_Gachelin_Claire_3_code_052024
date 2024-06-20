@@ -159,6 +159,7 @@ h1.menut-entete-title {
 
 .menu-card-price-container{
     padding-right: 15px;
+    margin-right: 5px; 
 }
 
 .menu-card-title,
@@ -179,7 +180,8 @@ h1.menut-entete-title {
 }
 
 .menu-card:hover .menu-card-price-container {
-    width: 40%;
+    width: 30%;
+    align-items: flex-end;
 }
 
 .menu-card:hover .menu-card-extra {
@@ -335,6 +337,14 @@ h1.menut-entete-title {
     .menu-card-container {
         width: 80%;
     }
+
+    .menu-card:hover .menu-card-price-container {
+        width: 28%;
+    }
+    
+    .menu-card:hover .menu-card-extra {
+        width: 14%;
+    }
 }
 
 /* Desktop */
@@ -360,4 +370,13 @@ h1.menut-entete-title {
     .menu-card-container {
         width: 70%;
     }
+
+    .menu-card:hover .menu-card-price-container {
+        width: 20%;
+    }
+    
+    .menu-card:hover .menu-card-extra {
+        width: 11%;
+    }
+    
 }
